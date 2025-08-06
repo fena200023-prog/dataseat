@@ -1,0 +1,52 @@
+SHEERM dataset - weather descriptor
+
+The features in the weather dataset include Timestamp, Temperature, Clearsky DHI, Clearsky DNI, Clearsky GHI, Cloud Type, Dew Point, DHI, DNI, Fill Flag, GHI, Ozone, Relative Humidity, Surface Albedo, Pressure, Precipitable Water, Wind Direction, Wind Speed, Solar Azimuth Angle (rad) and Solar Zenith Angle (rad). 
+Each row represents a 15-minute interval, with the data corresponding to surface cells measuring 0.038 degrees in both latitude and longitude, equivalent to approximately 4 km in size.
+
+
+Each variable is explained by the following:
+
+Timestamp: This variable denote the time at which the data was recorded, providing temporal information for analysis and prediction. It includes information about the Year, Month, Day, Hour and Minute.
+
+Temperature (ºC): Represents the ambient temperature at the time of recording, which influences various aspects of solar energy generation and atmospheric conditions.
+
+Clearsky DHI, Clearsky DNI, Clearsky GHI (W/m^2)}: These variables indicate the direct horizontal irradiance (DHI), direct normal irradiance (DNI), and global horizontal irradiance (GHI) under clear sky conditions. They serve as benchmarks for solar energy potential in the absence of clouds.
+
+Cloud Type: Describes the type of clouds present in the sky at the time of observation, influencing the amount of solar irradiation reaching the Earth's surface. Each cloud type can be:
+
+	Cloud Type 0 (Clear): Indicates clear sky conditions with no visible clouds.
+	Cloud Type 1 (Probably Clear): Suggests mostly clear skies with minimal cloud cover.
+	Cloud Type 2 (Fog): Represents the presence of fog, indicating low-lying clouds near the Earth's surface.
+	Cloud Type 3 (Water): Refers to clouds composed primarily of water droplets, typically associated with low to mid-level cloud formations.
+	Cloud Type 4 (Super-Cooled Water): Describes clouds containing super-cooled water droplets that remain liquid below the freezing point, often found in high-altitude clouds.
+	Cloud Type 5 (Mixed): Indicates a mixture of different cloud types or conditions.
+	Cloud Type 6 (Opaque Ice): Represents clouds composed of opaque ice crystals, typically found in high-altitude cirrus clouds.
+	Cloud Type 7 (Cirrus): Refers to thin, wispy clouds composed of ice crystals, often seen at high altitudes.
+	Cloud Type 8 (Overlapping): Suggests overlapping or layered cloud formations.
+	Cloud Type 9 (Overshooting): Indicates clouds with vertical development, often associated with thunderstorms or convective activity.
+	Cloud Type 10 (Unknown): Represents clouds whose type or classification is uncertain or unidentified.
+	Cloud Type 11 (Dust): Refers to clouds containing suspended dust particles, typically found in arid or desert regions.
+	Cloud Type 12 (Smoke): Indicates clouds influenced by smoke particles from wildfires, industrial activity, or other sources.
+
+Dew Point (ºC): The temperature at which air becomes saturated with moisture, indicating atmospheric humidity and potential condensation.
+
+DHI, DNI, GHI (W/m^2): Direct horizontal irradation (DHI), direct normal irradation (DNI), and global horizontal irradation (GHI) represent the solar irradiation received at the Earth's surface, influencing solar energy generation.
+
+Fill Flag: A flag indicating whether certain data points are missing or filled in, aiding in data quality assessment and imputation.
+
+Ozone (ppm): Represents the concentration of ozone in the atmosphere, which affects the transmission of solar radiation and atmospheric stability.
+
+Relative Humidity (\%): The percentage of moisture in the air relative to the maximum amount the air can hold at a given temperature, influencing atmospheric conditions and evaporation rates.
+
+Surface Albedo: The ratio of solar irradiation reflected by a surface to the total incoming solar irradiation, impacting surface temperatures and energy absorption.
+
+Pressure (mbar): Atmospheric pressure at the time of recording, affecting weather patterns, wind movement, and cloud formation.
+
+Precipitable Water (cm): The amount of water vapour in a vertical column of the atmosphere, which influences cloud formation, precipitation, and atmospheric stability.
+
+Wind Direction (º), Wind Speed (m/s): Wind direction indicates the direction from which the wind is blowing, while wind speed measures its intensity, both of which affect weather patterns and energy generation from wind turbines.
+
+Solar Azimuth Angle (rad): The Solar Azimuth Angle is the direction from which the sunlight is coming at any specific point on the earth's surface. In this dataset, the north is taken as the reference for the azimuth.
+
+Solar Zenith Angle (rad): The Solar Zenith Angle is the angle between the vertical direction (directly overhead) and the line to the sun. It complements the Solar Elevation Angle, which is the angle between the horizon and the sun. This angle varies throughout the day, being smallest at solar noon when the sun is highest in the sky. It also changes with the seasons due to the tilt of the Earth's axis.
+
