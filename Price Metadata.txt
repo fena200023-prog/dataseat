@@ -1,0 +1,15 @@
+SHEERM dataset - Market Energy Price Data descriptor 
+
+
+The SHEERM dataset corresponding to Portugal has 76,680 rows and five columns. 
+The features present in the SHEERM dataset are: 
+
+- Timestamp: Denotes the time at which the data was recorded. It includes information about the Year, Month, Day, Hour, and Minute
+
+- Day of the Week: Indicates the day of the week (0 = Monday, 6 = Sunday) corresponding to the Timestamp 
+
+- Season: Represents the season based on the month of the Timestamp (0 - Winter; 1 - Spring; 2 - Summer; 3 - Autumn)
+
+- Daytime: Classifies whether the Timestamp falls within daylight hours based on sunrise and sunset times (0 - daytime; 1 - nighttime)
+
+- Price (EUR/MWh): The market price of electricity in Euros per Megawatt-hour at the Timestamp 
